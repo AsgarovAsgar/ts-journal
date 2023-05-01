@@ -1,11 +1,8 @@
-# Boilerplate Code for Typescript with Vue.js 3 Course
+# Simple journal app
 
-This is the boilerplate code for the TypeScript with Vue.js 3 Course.
+Created by using the TypeScript with Vue.js 3 Course by [VueSchool](https://vueschool.io/courses/typescript-with-vue-js-3)
 
 ## How to Install
-```sh
-npx degit vueschool/ts-vue-boilerplate 
-```
 ```sh
 npm install
 npm run dev
