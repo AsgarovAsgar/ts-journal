@@ -16,7 +16,7 @@ defineProps<{
     <div class="entry-footer">
       <DateDisplay :date="entry.createdAt" class="mr-2" />
       |
-      <span class="ml-2">danielkelly_io</span>
+      <span class="ml-2">Asgar</span>
     </div>
   </div>
 </template>
