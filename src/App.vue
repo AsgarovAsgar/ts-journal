@@ -23,6 +23,7 @@ const handleCreateEntry = (entry: Entry) => {
 
 <template>
   <main class="container m-auto p-10">
+    Vue js Forge
     <TheHeader />
     <EntryEditor @@create="handleCreateEntry" />
     <ul>
