@@ -2,19 +2,25 @@
 import TheHeader from "@/components/TheHeader.vue";
 import EntryEditor from "./components/EntryEditor.vue";
 import EntryCard from "@/components/EntryCard.vue";
-import {reactive } from 'vue'
+import { inject, provide, reactive } from 'vue'
 import type User from './types/User'
 import type Entry from "./types/Entry";
+import { userInjectionKey } from './injectionKeys'
 
 const entries: Entry[] = reactive([])
-
+// const userInjectionKey = Symbol() as InjectionKey<User>
 const user : User = reactive({
   id: 1,
   username: 'Asgar',
   settings: []
 })
 
-console.log(user );
+provide(userInjectionKey, user)
+
+// in child component
+// const injectedUser = inject(userInjectionKey)
+
+
 const handleCreateEntry = (entry: Entry) => {
   entries.unshift(entry)
 }
