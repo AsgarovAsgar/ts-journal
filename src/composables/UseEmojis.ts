@@ -16,7 +16,7 @@ export default function UseEmojis() {
     emojis.push({ name, component });
   }
   /**
-   * Get a single emoji component by name
+   * Get a single emoji component by name and show it
    */
   const findEmoji = (name: Emoji | null) =>
     emojis.find((emoji) => emoji.name === name)?.component;
